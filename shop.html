@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop - Youthwear ID</title>
+
+<link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+<header>
+
+<h1>YOUTHWEAR ID</h1>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+    <a href="login.html">Login</a>
+</nav>
+
+</header>
+
+<section class="products">
+
+<h2>🔥 Semua Produk</h2>
+<div class="kategori">
+
+<button onclick="filterProduk('semua')">Semua</button>
+
+<button onclick="filterProduk('kaos')">Kaos</button>
+
+<button onclick="filterProduk('hoodie')">Hoodie</button>
+
+<button onclick="filterProduk('celana')">Celana</button>
+
+<button onclick="filterProduk('topi')">Topi</button>
+
+</div>
+
+<div class="search-box">
+    <input type="text" id="search" placeholder="🔍 Cari produk..." onkeyup="cariProduk()">
+</div>
+
+<div class="product-grid">
+
+<div class="product" data-kategori="kaos">
+
+<span class="badge">NEW</span>
+
+<a href="product.html">
+<a href="product.html">
+<img src="images/kaos.jpg" alt="Tshirt Calle">
+</a>
+</a>
+
+<h3>Tshirt Calle</h3>
+<p class="deskripsi">
+Kaos kalcer berbahan cotton combed premium.
+</p>
+
+<p><del>Rp199.000</del></p>
+
+<h4>Rp149.000</h4>
+<p class="stok">✅ Stok Tersedia</p>
+<p class="ukuran">
+Ukuran:
+<span>S</span>
+<span>M</span>
+<span>L</span>
+<span>XL</span>
+</p>
+
+<p>⭐⭐⭐⭐⭐ (4.9)</p>
+
+<div class="product-actions">
+
+<button class="wishlist-btn"
+onclick="tambahWishlist('Tshirt Calle')">
+❤️
+</button>
+
+<button class="buy-btn"
+onclick="tambahKeranjang('Tshirt Calle',149000)">
+🛒 Tambah
+</button>
+
+</div>
+<div class="product" data-kategori="celana">
+
+<span class="badge">NEW</span>
+
+<img src="images/sweetpants.jpg" alt="Sweet Pants">
+
+<h3>Cargo Pants</h3>
+
+<p class="deskripsi">Celana cargo premium dengan bahan nyaman.</p>
+
+<p><del>Rp329.000</del></p>
+
+<h4>Rp259.000</h4>
+
+<p class="stok">✅ Stok Tersedia</p>
+
+<p>⭐⭐⭐⭐⭐ (4.9)</p>
+
+<button class="buy-btn" onclick="tambahKeranjang('Cargo Pants',259000)">
+🛒 Tambah
+</button>
+
+</div>
+
+</div>
+
+<div class="product" data-kategori="topi">
+
+<span class="badge">BEST</span>
+
+<img src="images/topi.jpg" alt="Snapback Youth">
+
+<h3>Snapback Youth</h3>
+
+<p class="deskripsi">Topi snapback premium untuk gaya streetwear.</p>
+
+<p><del>Rp179.000</del></p>
+
+<h4>Rp129.000</h4>
+
+<p class="stok">✅ Stok Tersedia</p>
+
+<p>⭐⭐⭐⭐⭐ (4.8)</p>
+
+<button class="buy-btn" onclick="tambahKeranjang('Snapback Youth',129000)">
+🛒 Tambah
+</button>
+
+</div>
+
+</div>
+
+<div class="product" data-kategori="hoodie">
+
+<span class="badge">BEST</span>
+
+<img src="images/hoodie.jpg" alt="Hoodie Chambre">
+
+<h3>Hoodie Chambre</h3>
+<p class="deskripsi">
+hoodie kalcer berbahan cotton combed premium.
+</p>
+
+<p><del>Rp349.000</del></p>
+
+<h4>Rp299.000</h4>
+<p class="stok">✅ Stok Tersedia</p>
+<p class="ukuran">
+Ukuran:
+<span>S</span>
+<span>M</span>
+<span>L</span>
+<span>XL</span>
+</p>
+
+<p>⭐⭐⭐⭐⭐ (4.8)</p>
+
+<div class="product-actions">
+
+<button class="wishlist-btn"
+onclick="tambahWishlist('Hoodie Chambre')">
+❤️
+</button>
+
+<button class="buy-btn"
+onclick="tambahKeranjang('Tshirt Calle',149000)">
+🛒 Tambah
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<br>
+
+<a href="cart.html" class="buy-btn">
+🛒 Lihat Keranjang
+</a>
+
+</section>
+<script src="scripts/script.js"></script>
+</body>
+</html>
